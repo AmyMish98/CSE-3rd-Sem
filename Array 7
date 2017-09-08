@@ -3,7 +3,7 @@
 int main()
 {
     system("cls");
-    int arr[100],loc,temp, size,ele, i=0, j;
+    int arr[100],loc, size,ele, i=0, j;
 
     printf ("Enter the size of the array : ");
     scanf("%d", &size);
