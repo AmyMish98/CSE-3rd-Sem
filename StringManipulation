@@ -1,0 +1,47 @@
+Private Sub Option14_Click()
+    Text2.Text = str(Val(input_char))
+End Sub
+
+Private Sub Option15_Click()
+    Text2.Text = Asc(input_char)
+End Sub
+
+Private Sub Option3_Click()
+    Dim right_Text As String
+    Dim r As Integer
+    right_Text = InputBox("Enter number of characters", "Right Manipulation", "Enter the required length", 500, 700)
+    r = Val(right_Text)
+    Text2.Text = right(input_char, r)
+End Sub
+
+Private Sub Option4_Click()
+    Dim left_Text As String
+    Dim l As Integer
+    left_Text = InputBox("Enter number of characters", "Left Manipulation", "Enter the required length", 500, 700)
+    l = Val(left_Text)
+    Text2.Text = Left(input_char, l)
+End Sub
+
+Private Sub Option5_Click()
+    Text2.Text = LTrim(input_char)
+End Sub
+
+Private Sub Option6_Click()
+    Text2.Text = RTrim(input_char)
+End Sub
+
+Private Sub Option7_Click()
+    Text2.Text = Trim(input_char)
+End Sub
+
+Private Sub Option8_Click()
+    Text2.Text = UCase(input_char)
+End Sub
+
+Private Sub Option9_Click()
+    Text2.Text = LCase(input_char)
+End Sub
+
+Private Sub Text1_Change()
+    input_char = Text1.Text
+End Sub
